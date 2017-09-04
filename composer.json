@@ -2,5 +2,25 @@
     "name": "fineuploader/php-traditional-server",
     "description": "Endpoint handler for Fine Uploader's traditional server requests.",
     "homepage": "http://fineuploader.com",
-    "license": "MIT"
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": ">=7.0",
+	    "mehrdad-dadkhah/chunks-uploader": "^1.1"
+    },
+    "authors": [
+    	{
+            "name": "Ray Nicholus",
+            "website": "https://raynicholus.com/about/"
+        },
+        {
+            "name": "Mehrdad Dadkhah",
+            "email": "mehrdad@dadkhah.me"
+        }
+    ],
+    "autoload": {
+	    "psr-4": {
+		    "FineUploader\\Video\\": "src/"
+	    }
+    }
 }
